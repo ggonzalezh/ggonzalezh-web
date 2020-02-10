@@ -48,7 +48,7 @@ function App() {
           </div>
         </div>
       </div>
-      <Particles className="particles-js"
+      <Particles className="Background"
         params={particlesOpts}
       />
     </div>
