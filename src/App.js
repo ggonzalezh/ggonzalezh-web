@@ -11,10 +11,25 @@ function App() {
   return (
     <div>
       <div className="Content">
-        <div>
-          <img src={construction} className="Image" alt="me" />
+        <div className="wrapper">
+          <a href="https://github.com/ggonzalezh">
+            <div className="quarter left-top">
+              <img src={githubImage} className="githubIcon" alt="gitHubImage" />
+            </div>
+          </a>
+          <div className="quarter right-top">
+          <img src={gmailImage} className="gmailIcon" alt="gmailImage" />
+          </div>
+          <div className="quarter left-bottom">
+            <img src={twitterImage} className="twitterIcon" alt="twitterImage" />
+          </div>
+          <div className="quarter right-bottom">
+          <img src={construction} className="image" alt="me" />
+          </div>
         </div>
-        <div >
+        <div>
+        </div>
+        <br></br>
           <div className="speech-bubble">
             <div className="bubble-margin">
               <h2 className="say-hi">Hola,</h2>
@@ -22,31 +37,9 @@ function App() {
                 <p>Mi nombre es Guillermo González, soy desarrollador de software y radico en Santiago, Chile.</p>
                 <p>Me encanta JavaScript, TypeScript, el software libre-abierto y el continuo aprendizaje.</p>
                 <p>Me considero una persona tranquila, pero ante cualquier conflicto, nos vemos en el Smash Bros junto a unas cervezas.</p>
-                <p>Puedes encontrarme en: </p>
-                <ul>
-                  <li>
-                    <a href="https://github.com/ggonzalezh">
-                      <span><img src={githubImage} className="icon" alt="gitHubImage"/> Github</span>
-                      <p className="social-media">Donde subo código, generalmente side project, pruebas de nuevas tecnologías, etc.</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/ggonzalezh_cl">
-                      <span><img src={twitterImage} className="icon"  alt="twitterImage"/> Twitter</span>
-                      <p className="social-media">Donde hablo y sigo sobre las vanguardias de las tecnologías en el rubro del desarrollo de software.</p>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="mailto:hello@ggonzalezh.dev">
-                      <span><img src={gmailImage} className="icon" alt="gmailImage"/> Email</span>
-                      <p className="social-media">Para contacto directo: hello@ggonzalezh.dev</p>
-                    </a>
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
-        </div>
       </div>
       <Particles className="Background"
         params={particlesOpts}

@@ -1,9 +1,9 @@
-.Image {
-  height: 170px;
-  border-radius: 20%;
-  padding: 1px;
-  /* border: 6px solid #174c68; */
-  border: 6px solid white;
+.image {
+  width: 215px;
+  height: 150px;
+  left: 45px;
+  top: 180px;
+  border-bottom-right-radius: 50px;
 }
 
 .Content {
@@ -21,12 +21,12 @@
 }
 
 .speech-bubble {
-	position: relative;
-	background: #fafafa;
-  border-radius: .4em;
+  position: relative;
+  background: #fafafa;
+  border-radius: 0.4em;
   /* box-shadow: 0 0 55px #0686a8; */
   /* box-shadow: 0 0 40px #18afdb; */
-  margin: 5vmin 5vmin 0 5vmin;
+  margin: 275px 2vmin 0px 2vmin;
   box-shadow: 0 8px 45px -8px #18afdb, 0 -8px 40px -8px #0686a8;
 }
 
@@ -37,11 +37,12 @@
 	left: 50%;
 	width: 0;
 	height: 0;
-	border: 22px solid transparent;
+	border: 53px solid transparent;
 	border-bottom-color: #fafafa;
 	border-top: 0;
-	margin-left: -22px;
-	margin-top: -22px;
+	border-right: 0;
+	margin-left: -26.5px;
+	margin-top: -53px;
 }
 
 .Background {
@@ -49,21 +50,23 @@
   height: 100%;
   position: fixed;
   background-color: #181d31;
+  /* background-color: white; */
 }
 
-.say-hi{
+.say-hi {
   font-size: 20px;
   font-weight: 600;
-  color:  #0686a8;
+  color: #0686a8;
   padding: 0 15px 0 15px;
   font-style: normal;
 }
 
-.bubble-margin{
-  padding: 10px;
+.bubble-margin {
+  padding: 1px;
+  margin: 0px;
 }
 
-.presentation-all-text{
+.presentation-all-text {
   max-width: 450px;
   font-size: 18px;
   font-weight: 400;
@@ -71,42 +74,112 @@
   padding: 0 15px 0 15px;
 }
 
-p{
+p {
   max-width: 100%;
 }
 
-ul{
+ul {
   padding-inline-start: 0px !important;
-
 }
 
-li{
+li {
   list-style-type: none;
   margin-top: 10px;
 }
 
-li:hover{
+li:hover {
   list-style-type: none;
   cursor: pointer;
   background-color: #dce6d4;
   border-radius: 5px;
 }
 
-.social-media{
+.social-media {
   margin: 0px 0px 0px 0px !important;
   font-size: 14px;
-} 
+}
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 
-span{
+span {
   color: #0686a8;
 }
 
-.icon{
-  width: 19px;
-  height: 19px;
+.githubIcon {
+  width: 140px;
+  height: 90px;
+  margin: 30px;
+}
+
+.twitterIcon{
+  width: 130px;
+  height: 150px;
+  margin: 10px 0px 0px 32px;
+}
+
+.gmailIcon{
+  width: 93px;
+  height: 72px;
+  margin: 38px 10px 0px 58px;
+  box-shadow: 0 3px 7px black;
+}
+
+div.wrapper {
+  position: relative;
+  width: 69px;
+  height: 100px;
+  border-radius: 50px;
+}
+div.quarter {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  transition: transform 0.5s, opacity 0.9s;
+  cursor: pointer;
+}
+div.quarter.left-top {
+  border-top-left-radius: 50px;
+  left: -191px;
+  border-top-left-radius: 50px;
+  width: 228px;
+  height: 150px;
+  top: 21px;
+  background-color: white;
+  border: 2px solid black;
+}
+div.quarter.right-top {
+  left: 45px;
+  top: 21px;
+  border-top-right-radius: 50px;
+  width: 215px;
+  height: 150px;
+  background-color: red;
+  border: 2px solid black;
+}
+div.quarter.left-bottom {
+  left: -191px;
+  top: 180px;
+  border-bottom-left-radius: 50px;
+  width: 228px;
+  height: 150px;
+  background-color: #1DA1F2;
+  border: 2px solid black;
+}
+div.quarter.right-bottom {
+  width: 215px;
+  height: 150px;
+  left: 45px;
+  top: 180px;
+  border-bottom-right-radius: 50px;
+  border: 2px solid black;
+}
+div.wrapper:hover div.quarter {
+  opacity: 0.5;
+}
+div.quarter:hover {
+  opacity: 1 !important;
 }
