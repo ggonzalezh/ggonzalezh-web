@@ -17,29 +17,32 @@ function App() {
               <img src={githubImage} className="githubIcon" alt="gitHubImage" />
             </div>
           </a>
-          <div className="quarter right-top">
-          <img src={gmailImage} className="gmailIcon" alt="gmailImage" />
-          </div>
-          <div className="quarter left-bottom">
-            <img src={twitterImage} className="twitterIcon" alt="twitterImage" />
-          </div>
+          <a href="mailto:hello@ggonzalezh.dev">
+            <div className="quarter right-top">
+              <img src={gmailImage} className="gmailIcon" alt="gmailImage" />
+            </div>
+          </a>
+          <a href="https://twitter.com/ggonzalezh_cl">
+            <div className="quarter left-bottom">
+              <img src={twitterImage} className="twitterIcon" alt="twitterImage" />
+            </div>
+          </a>
           <div className="quarter right-bottom">
-          <img src={construction} className="image" alt="me" />
+            <img src={construction} className="image" alt="me" />
           </div>
-        </div>
-        <div>
         </div>
         <br></br>
-          <div className="speech-bubble">
-            <div className="bubble-margin">
-              <h2 className="say-hi">Hola,</h2>
-              <div className="presentation-all-text">
-                <p>Mi nombre es Guillermo González, soy desarrollador de software y radico en Santiago, Chile.</p>
-                <p>Me encanta JavaScript, TypeScript, el software libre-abierto y el continuo aprendizaje.</p>
-                <p>Me considero una persona tranquila, pero ante cualquier conflicto, nos vemos en el Smash Bros junto a unas cervezas.</p>
-              </div>
+        <div className="speech-bubble">
+          <div className="bubble-margin">
+            <h2 className="say-hi">Hola,</h2>
+            <div className="presentation-all-text">
+              <p>Mi nombre es Guillermo González, soy desarrollador de software y radico en Santiago, Chile.</p>
+              <p>Me gusta JavaScript, TypeScript, los proyectos de comunidad y el continuo aprendizaje.</p>
+              <p>Me considero una persona tranquila, pero ante cualquier conflicto, nos vemos en el Smash Bros junto a unas cervezas.</p>
+              <p>Si te quieres comunicar conmigo, te invito a enviar un mail a hello@ggonzalezh.dev</p>
             </div>
           </div>
+        </div>
       </div>
       <Particles className="Background"
         params={particlesOpts}

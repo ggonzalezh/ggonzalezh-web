@@ -6,6 +6,8 @@
   border-bottom-right-radius: 50px;
 }
 
+
+
 .Content {
   min-height: 100%;
   min-width: 100%;
@@ -151,6 +153,7 @@ div.quarter.left-top {
   background-color: white;
   border: 2px solid black;
 }
+
 div.quarter.right-top {
   left: 45px;
   top: 21px;
@@ -178,8 +181,11 @@ div.quarter.right-bottom {
   border: 2px solid black;
 }
 div.wrapper:hover div.quarter {
-  opacity: 0.5;
+  opacity: 1;
 }
-div.quarter:hover {
+
+div.quarter:hover  {
   opacity: 1 !important;
+  box-shadow: 0 8px 45px -8px #18afdb, 0 -8px 40px -8px #0686a8;
 }
+
