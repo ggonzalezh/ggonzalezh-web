@@ -1,0 +1,68 @@
+.image {
+  width: 168px;
+  height: 150px;
+  left: 45px;
+  top: 180px;
+  border-bottom-right-radius: 50px;
+}
+
+div.wrapper {
+  position: relative;
+  width: 69px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+div.quarter {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  transition: transform 0.5s, opacity 0.9s;
+  cursor: pointer;
+}
+div.quarter.left-top {
+    border-top-left-radius: 50px;
+    left: -141px;
+    border-top-left-radius: 50px;
+    width: 168px;
+    height: 150px;
+    top: 21px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+div.quarter.right-top {
+    left: 35px;
+    top: 21px;
+    border-top-right-radius: 50px;
+    width: 168px;
+    height: 150px;
+    background-color: red;
+    border: 2px solid black;
+}
+div.quarter.left-bottom {
+    left: -141px;
+    top: 179px;
+    border-bottom-left-radius: 50px;
+    width: 168px;
+    height: 150px;
+    background-color: #1da1f2;
+    border: 2px solid black;
+}
+div.quarter.right-bottom {
+    width: 168px;
+    height: 150px;
+    left: 35px;
+    top: 179px;
+    border-bottom-right-radius: 50px;
+    border: 2px solid black;
+}
+div.wrapper:hover div.quarter {
+  opacity: 0.3;
+}
+
+div.quarter:hover {
+  opacity: 1 !important;
+  box-shadow: 0 8px 45px -8px #18afdb, 0 -8px 40px -8px #0686a8;
+}
