@@ -3,6 +3,8 @@ import twitterImage from '../../multimedia/twitter.png';
 import githubImage from '../../multimedia/github.svg';
 import gmailImage from '../../multimedia/gmail.png';
 import construction from '../../multimedia/me.jpg';
+import me from '../../multimedia/yo.jpg'
+import me2 from '../../multimedia/yo4.jpg'
 import './cloud.css';
 
 export default class CloudText extends Component {
@@ -27,22 +29,25 @@ export default class CloudText extends Component {
                 <div className="wrapper">
                     <a href="https://github.com/ggonzalezh">
                         <div className="quarter left-top" onMouseOver={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
-                            <img src={githubImage} className="githubIcon" alt="gitHubImage" />
+                            <img src={githubImage} className="githubIcon" alt="gitHubImage" /><br/>
+                            <p className="textImage">github.com/ggonzalezh</p>
                         </div>
                     </a>
                     <a href="mailto:hello@ggonzalezh.dev">
                         <div className="quarter right-top">
                             <img src={gmailImage} className="gmailIcon" alt="gmailImage" />
+                            <p className="textImage">hello@ggonzalezh.dev</p>
                         </div>
                     </a>
                     <a href="https://twitter.com/ggonzalezh_cl">
                         <div className="quarter left-bottom">
                             <img src={twitterImage} className="twitterIcon" alt="twitterImage" />
+                            <p className="textImage">twitter.com/ggonzalezh_cl</p>
                         </div>
                     </a>
                     <div>
                         <div className="quarter right-bottom">
-                            <img src={construction} className="image" alt="me" />
+                            <img src={me2} className="image" alt="me" />
                         </div>
                     </div>
                 </div>
