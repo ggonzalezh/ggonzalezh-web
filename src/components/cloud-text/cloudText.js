@@ -13,17 +13,15 @@ export default class CloudText extends Component {
         };
     }
     onMouseEnter = e => {
-        console.log('entro');
         this.setState({ show: true });
     };
 
     onMouseLeave = e => {
-        console.log('salio');
         this.setState({ show: false });
     };
     render() {
         const { show } = this.state;
-        const github = show ? { visibility: 'visible' } : { visibility: 'hidden' };
+        const github = show ? { display: 'block' } : { display: 'none' };
         return (
             <div>
                 <div className="wrapper">
