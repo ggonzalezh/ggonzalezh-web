@@ -8,7 +8,7 @@
 
 div.wrapper {
   position: relative;
-  width: 69px;
+  width: 85px;
   height: 100px;
   margin: 0 auto;
   border-radius: 50px;
@@ -27,7 +27,7 @@ div.quarter.left-top {
   width: 205px;
   height: 190px;
   top: 21px;
-  background-color: white;
+  background-color: #24292e;
   border: 2px solid black;
 }
 
@@ -37,7 +37,7 @@ div.quarter.right-top {
   border-top-right-radius: 50px;
   width: 205px;
   height: 190px;
-  background-color: red;
+  background-color: #bd0205;
   border: 2px solid black;
 }
 div.quarter.left-bottom {
@@ -68,6 +68,7 @@ div.quarter:hover {
 }
 
 .textImage{
+  text-align: center;
   margin: 0px;
   font-style: normal;
   color: white;
