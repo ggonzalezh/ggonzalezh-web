@@ -6,6 +6,24 @@
   border-bottom-right-radius: 50px;
 }
 
+.githubIcon {
+  width: 90px;
+  height: 90px;
+  margin: 50px 1px 1px 58px;
+}
+
+.twitterIcon{
+  width: 90px;
+  height: 90px;
+  margin: 41px 0px 0px 57px;
+}
+
+.gmailIcon{
+  width: 90px;
+  height: 90px;
+  margin: 50px 0px 0px 60px;
+}
+
 div.wrapper {
   position: relative;
   width: 85px;
@@ -67,6 +85,7 @@ div.quarter:hover {
   box-shadow: 0 8px 45px -8px #18afdb, 0 -8px 40px -8px #0686a8;
 }
 
+
 .textImage{
   text-align: center;
   margin: 0px;
@@ -76,12 +95,46 @@ div.quarter:hover {
   font-size: 13px;
 }
 
-@media (max-width: 600px) {
-  /* .image {
+@media (max-width: 499px) {
+  .image {
+    width: 155px;
+    height: 170px;
+    top: 200px;
+  }
+
+  .githubIcon {
+    margin: 25px 1px 1px 35px;
+  }
+
+  .twitterIcon{
+    margin: 25px 1px 1px 35px;
+  }
+  
+  .gmailIcon{
+    margin: 25px 1px 1px 35px; 
+  }
+
+  div.quarter.right-top {
+    width: 155px;
+    height: 170px;
+  }
+
+  div.quarter.right-bottom {
+    width: 155px;
+    height: 170px;
+    top: 200px;
+  }
+  
+  div.quarter.left-top {
+    left: -116px;
     width: 150px;
-    height: 150px;
-    left: 45px;
-    top: 180px;
-    border-bottom-right-radius: 50px;
-  } */
+    height: 170px;
+  }
+
+  div.quarter.left-bottom {
+    left: -116px;
+    width: 150px;
+    height: 170px;
+    top: 200px;
+  }
 }

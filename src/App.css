@@ -99,21 +99,3 @@ a {
 span {
   color: #0686a8;
 }
-
-.githubIcon {
-  width: 90px;
-  height: 90px;
-  margin: 50px 1px 1px 58px;
-}
-
-.twitterIcon{
-  width: 90px;
-  height: 90px;
-  margin: 41px 0px 0px 57px;
-}
-
-.gmailIcon{
-  width: 90px;
-  height: 90px;
-  margin: 50px 0px 0px 60px;
-}
