@@ -1,140 +1,45 @@
-.image {
-  width: 205px;
-  height: 190px;
-  left: 45px;
-  top: 200px;
-  border-bottom-right-radius: 50px;
+.say-hi {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0686a8;
+  padding: 0 15px 0 15px;
+  font-style: normal;
 }
 
-.githubIcon {
-  width: 90px;
-  height: 90px;
-  margin: 50px 1px 1px 58px;
+.bubble-margin {
+  padding: 1px;
+  margin: 0px;
 }
 
-.twitterIcon{
-  width: 90px;
-  height: 90px;
-  margin: 41px 0px 0px 57px;
+.presentation-all-text {
+  max-width: 450px;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0 15px 0 15px;
 }
 
-.gmailIcon{
-  width: 90px;
-  height: 90px;
-  margin: 50px 0px 0px 60px;
-}
 
-div.wrapper {
-  position: relative;
-  width: 85px;
-  height: 100px;
-  margin: 0 auto;
-  border-radius: 50px;
-}
-div.quarter {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background-color: #333;
-  transition: transform 0.5s, opacity 0.9s;
-  cursor: pointer;
-}
-div.quarter.left-top {
-  border-top-left-radius: 50px;
-  left: -174px;
-  width: 205px;
-  height: 190px;
-  top: 21px;
-  background-color: #24292e;
-  border: 2px solid black;
-}
-
-div.quarter.right-top {
-  left: 40px;
-  top: 21px;
-  border-top-right-radius: 50px;
-  width: 205px;
-  height: 190px;
-  background-color: #bd0205;
-  border: 2px solid black;
-}
-div.quarter.left-bottom {
-  left: -174px;
-  top: 218px;
-  border-bottom-left-radius: 50px;
-  width: 205px;
-  height: 190px;
-  background-color: #1da1f2;
-  border: 2px solid black;
-}
-div.quarter.right-bottom {
-  width: 205px;
-  height: 190px;
-  left: 40px;
-  top: 218px;
-  border-bottom-right-radius: 50px;
-  border: 2px solid black;
-  background-color: transparent;
-}
-div.wrapper:hover div.quarter {
-  opacity: 0.3;
-}
-
-div.quarter:hover {
-  opacity: 1 !important;
+.speech-bubble {
+	position: relative;
+	background: #fafafa;
+  border-radius: .4em;
+  /* box-shadow: 0 0 55px #0686a8; */
+  /* box-shadow: 0 0 40px #18afdb; */
+  margin: 5vmin 5vmin 0 5vmin;
   box-shadow: 0 8px 45px -8px #18afdb, 0 -8px 40px -8px #0686a8;
 }
 
-
-.textImage{
-  text-align: center;
-  margin: 0px;
-  font-style: normal;
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-size: 13px;
-}
-
-@media (max-width: 499px) {
-  .image {
-    width: 155px;
-    height: 170px;
-    top: 200px;
-  }
-
-  .githubIcon {
-    margin: 25px 1px 1px 35px;
-  }
-
-  .twitterIcon{
-    margin: 25px 1px 1px 35px;
-  }
-  
-  .gmailIcon{
-    margin: 25px 1px 1px 35px; 
-  }
-
-  div.quarter.right-top {
-    width: 155px;
-    height: 170px;
-  }
-
-  div.quarter.right-bottom {
-    width: 155px;
-    height: 170px;
-    top: 200px;
-  }
-  
-  div.quarter.left-top {
-    left: -116px;
-    width: 150px;
-    height: 170px;
-  }
-
-  div.quarter.left-bottom {
-    left: -116px;
-    width: 150px;
-    height: 170px;
-    top: 200px;
-  }
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-bottom-color: #ffffff;
+	border-top: 0;
+	margin-left: -20px;
+	margin-top: -20px;
 }

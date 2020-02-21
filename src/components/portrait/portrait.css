@@ -1,0 +1,59 @@
+.portrait {
+    padding: 0px 45px 4px 50px;
+    transition: transform 3s, opacity 3s;
+}
+
+img{
+    height: 35px;
+    margin-right: 8px;
+    transition: transform 0.5s, opacity 0.9s;
+}
+
+.image {
+  height: 170px;
+  border-radius: 20%;
+  border: 3px solid white;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.github {
+    cursor: pointer;
+}
+
+.twitter {
+    cursor: pointer;
+}
+
+.gmail{
+    cursor: pointer;
+}
+
+div.portrait:hover img {
+    opacity: 0.3;
+}
+
+div.portrait img:hover {
+    opacity: 1 !important;
+  }
+
+@media (max-width: 499px) {
+  .image {
+    width: 155px;
+    height: 170px;
+    top: 200px;
+  }
+
+  .githubIcon {
+    margin: 25px 1px 1px 35px;
+  }
+
+  .twitterIcon {
+    margin: 25px 1px 1px 35px;
+  }
+
+  .gmailIcon {
+    margin: 25px 1px 1px 35px;
+  }
+}

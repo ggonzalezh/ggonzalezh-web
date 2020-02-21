@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Cloud from './components/cloud-text/cloudText';
+import Portrait from './components/portrait/portrait';
 import './App.css';
 import Particles from 'react-particles-js';
 
@@ -35,10 +36,11 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <div className="Content">
+        <div className="content">
+          <Portrait></Portrait>
           <Cloud></Cloud>
         </div>
-        <Particles className="Background"
+        <Particles className="background"
           params={particlesOpts}
         />
       </div>

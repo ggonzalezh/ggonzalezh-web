@@ -1,4 +1,4 @@
-.Content {
+.content {
   min-height: 100%;
   min-width: 100%;
   display: flex;
@@ -12,58 +12,11 @@
   font-style: italic;
 }
 
-.speech-bubble {
-  position: relative;
-  background: #fafafa;
-  border-radius: 0.4em;
-  /* box-shadow: 0 0 55px #0686a8; */
-  /* box-shadow: 0 0 40px #18afdb; */
-  margin: 368px 2vmin 0px 2vmin;
-  box-shadow: 0 8px 45px -8px #18afdb, 0 -8px 40px -8px #0686a8;
-}
-
-.speech-bubble:after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 0;
-	height: 0;
-	border: 53px solid transparent;
-	border-bottom-color: #fafafa;
-	border-top: 0;
-	border-right: 0;
-	margin-left: -26.5px;
-	margin-top: -53px;
-}
-
-.Background {
+.background {
   width: 100%;
   height: 100%;
   position: fixed;
   background-color: #181d31;
-  /* background-color: white; */
-}
-
-.say-hi {
-  font-size: 20px;
-  font-weight: 600;
-  color: #0686a8;
-  padding: 0 15px 0 15px;
-  font-style: normal;
-}
-
-.bubble-margin {
-  padding: 1px;
-  margin: 0px;
-}
-
-.presentation-all-text {
-  max-width: 450px;
-  font-size: 18px;
-  font-weight: 400;
-  font-style: normal;
-  padding: 0 15px 0 15px;
 }
 
 p {
@@ -84,11 +37,6 @@ li:hover {
   cursor: pointer;
   background-color: #dce6d4;
   border-radius: 5px;
-}
-
-.social-media {
-  margin: 0px 0px 0px 0px !important;
-  font-size: 14px;
 }
 
 a {
