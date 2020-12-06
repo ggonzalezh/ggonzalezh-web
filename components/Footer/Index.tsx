@@ -1,11 +1,21 @@
 import { Layout } from 'antd'
+import LayoutContainer from './Style'
 
-export const Footer = () => {
+const Footer = () => {
   const year = new Date().getFullYear()
-
+  const { Footer } = Layout
   return (
-    <div>
-      <h1>test</h1>
-    </div>
+    <LayoutContainer>
+      <Layout>
+        <Footer>
+          <div style={{ textAlign: 'center' }}>
+            {' '}
+            © {year} Guillermo González{' '}
+          </div>
+        </Footer>
+      </Layout>
+    </LayoutContainer>
   )
 }
+
+export default Footer
