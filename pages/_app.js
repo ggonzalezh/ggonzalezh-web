@@ -6,14 +6,14 @@ import { Toggle } from "../components/Toggle/Index";
 import "antd/dist/antd.css";
 
 function MyApp({ Component, pageProps }) {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   const themeToggler = () => {
     darkMode === true ? setDarkMode(false) : setDarkMode(true);
   };
 
   return (
-    <ThemeProvider theme={darkMode === true ? darkTheme : lightTheme}>
+    <ThemeProvider theme={darkMode === true ? lightTheme : darkTheme}>
       <GlobalStyles />
       <Toggle
         checkedValue=":)"
