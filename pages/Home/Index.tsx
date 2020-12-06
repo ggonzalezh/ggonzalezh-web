@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import HomeContainer from './Style'
-import Intro from './Intro/Index'
-import About from './About/Index'
-import { useTransition, animated } from 'react-spring'
+import Intro from '../Intro/Index'
+import About from '../About/Index'
 
 const Home = () => {
   const [currentPage, setCurrentPage] = useState(true)
