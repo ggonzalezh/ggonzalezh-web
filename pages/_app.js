@@ -3,7 +3,7 @@ import { ThemeProvider } from "styled-components";
 import { Toggle } from "../components/Toggle/Index";
 import { GlobalStyles } from "../theme/globalStyles";
 import { lightTheme, darkTheme } from "../theme/Themes";
-import { Home } from "./Home/Index";
+import Home from "./Home/Index";
 import Sun from "../multimedia/sun.svg";
 import Moon from "../multimedia/moon.svg";
 import "antd/dist/antd.css";
