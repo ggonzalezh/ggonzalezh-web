@@ -8,5 +8,6 @@ export const darkTheme = {
   body: "#0f1222",
   text: "#FAFAFA",
   toggleBorder: "#6B8096",
-  background: "#999",
+  //background: "#999",
+  background: "rgb(21, 26, 48)",
 };
