@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Switch } from "antd";
-import { SwitchContainer } from "./Theme";
+import { SwitchContainer } from "./Style";
 
 export const Toggle = ({ checkedValue, uncheckedValue, handleFunction }) => {
   const [isChecked, setChecked] = useState(false);

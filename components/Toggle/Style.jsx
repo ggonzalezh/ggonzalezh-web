@@ -1,11 +1,13 @@
 import styled from "styled-components";
 
 export const SwitchContainer = styled.div`
+   {
+    text-align-last: end;
+  }
   .ant-switch {
     width: 5.5em;
     height: 2.5em;
-    margin: 1.5em;
-    float: right;
+    margin: 2.5em;
     background-color: rgb(89, 93, 222);
   }
   .ant-switch-checked {
