@@ -8,7 +8,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "@types/antd": "^4.9.1",
     "@types/styled-components": "^5.1.4",
     "antd": "^4.9.1",
     "babel-plugin-styled-components": "^1.12.0",
