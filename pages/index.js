@@ -1,4 +1,3 @@
-import { Intro } from "./Home/Intro.jsx";
 import { Button } from "../components/Button/Index";
 
 const HomePage = () => {
