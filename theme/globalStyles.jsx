@@ -6,8 +6,8 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     font-family: Tahoma, Helvetica, Arial, Roboto, sans-serif;
     transition: all 0.2s linear;
-    overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: hidden;
+    overflow-x: hidden;
   }
 
   .ant-layout-footer {
@@ -22,5 +22,10 @@ export const GlobalStyles = createGlobalStyle`
 
   h1, h2, h3, h4, h5, h6 {
     color: ${({ theme }) => theme.text};
+  }
+
+  mark{
+    background: none;
+    color: ${({ theme }) => theme.mark}
   }
   `

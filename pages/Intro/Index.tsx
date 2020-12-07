@@ -1,9 +1,8 @@
 import React from 'react'
-import Image from 'next/image'
 import IntroContainer from './Style'
 import { useTransition, animated } from 'react-spring'
 
-const Intro = ({ asd }) => {
+const Intro = ({ setCurrentPage }) => {
   const transitions = useTransition(0, p => p, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
@@ -20,7 +19,7 @@ const Intro = ({ asd }) => {
                 fontSize: '34px',
               }}
             >
-              Hi, I am Guillermo
+              Hi, I am <mark>Guillermo</mark>
               <img
                 src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"
                 width="40px"
@@ -31,8 +30,29 @@ const Intro = ({ asd }) => {
               A full stack developer who loves open source and values learning
               and growing with people, teams, and technologies.
             </p>
-            <p onClick={() => asd(false)} style={{ cursor: 'pointer' }}>
-              Read more about me or contact me
+            <p>
+              Read more{' '}
+              <mark
+                onClick={() => setCurrentPage('/about')}
+                style={{
+                  cursor: 'pointer',
+                  fontWeight: 'bold',
+                  textDecorationLine: 'underline',
+                }}
+              >
+                about me
+              </mark>{' '}
+              or{' '}
+              <mark
+                onClick={() => setCurrentPage('/contact')}
+                style={{
+                  cursor: 'pointer',
+                  fontWeight: 'bold',
+                  textDecorationLine: 'underline',
+                }}
+              >
+                contact me
+              </mark>
             </p>
           </animated.div>
         )

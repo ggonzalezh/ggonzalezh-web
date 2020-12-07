@@ -1,4 +1,3 @@
-import { render } from 'react-dom'
 import React, { useState, useCallback } from 'react'
 import { useTransition, animated } from 'react-spring'
 import AboutContainer from './Style'
@@ -11,8 +10,10 @@ import Firebase from '../../multimedia/firebase.svg'
 import Python from '../../multimedia/python.svg'
 import NodeJS from '../../multimedia/nodejs-icon.svg'
 import MongoDb from '../../multimedia/mongodb-icon.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
-const About = ({ asd }) => {
+const About = ({ setCurrentPage }) => {
   const transitions = useTransition(0, p => p, {
     from: { opacity: 0, transform: 'translate3d(0,100%,0)' },
     enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
@@ -23,7 +24,15 @@ const About = ({ asd }) => {
       {transitions.map(({ item, props, key }) => {
         return (
           <animated.div style={props}>
-            <p onClick={() => asd(true)}>VOLVER</p>
+            <FontAwesomeIcon
+              onClick={() => setCurrentPage('/')}
+              icon={faChevronLeft}
+              style={{
+                fontSize: '24px',
+                cursor: 'pointer',
+                color: 'rgb(255, 202, 40)',
+              }}
+            />
             <h1
               style={{
                 fontWeight: 'bold',

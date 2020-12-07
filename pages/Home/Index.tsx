@@ -2,15 +2,18 @@ import React, { useState } from 'react'
 import HomeContainer from './Style'
 import Intro from '../Intro/Index'
 import About from '../About/Index'
+import Contact from '../Contact/Index'
 
 const Home = () => {
-  const [currentPage, setCurrentPage] = useState(true)
+  const [currentPage, setCurrentPage] = useState('/')
   return (
     <HomeContainer>
-      {currentPage ? (
-        <Intro asd={setCurrentPage} />
+      {currentPage === '/contact' ? (
+        <Contact setCurrentPage={setCurrentPage} />
+      ) : currentPage === '/about' ? (
+        <About setCurrentPage={setCurrentPage} />
       ) : (
-        <About asd={setCurrentPage} />
+        <Intro setCurrentPage={setCurrentPage} />
       )}
     </HomeContainer>
   )
