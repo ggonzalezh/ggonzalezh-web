@@ -10,7 +10,7 @@ const Footer = () => {
         <Footer>
           <div style={{ textAlign: 'center' }}>
             {' '}
-            © {year} Guillermo González{' '}
+            © {year} Guillermo González | All rights reserved
           </div>
         </Footer>
       </Layout>

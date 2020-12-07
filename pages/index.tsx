@@ -27,7 +27,7 @@ const Index = () => {
         }
         handleFunction={themeToggler}
       ></Toggle>
-      <Home />
+      <Home isLightMode={darkMode} />
       <Footer />
     </ThemeProvider>
   )

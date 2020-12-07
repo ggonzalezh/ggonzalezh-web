@@ -12,7 +12,7 @@ const ContactDiv = styled.div`
   }
   span {
     margin-left: 25px;
-    font-size: 23px;
+    font-size: 20px;
   }
 `
 export default ContactDiv

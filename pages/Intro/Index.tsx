@@ -19,7 +19,7 @@ const Intro = ({ setCurrentPage }) => {
                 fontSize: '34px',
               }}
             >
-              Hi, I am <mark>Guillermo</mark>
+              Hi, I am Guillermo
               <img
                 src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"
                 width="40px"
@@ -32,27 +32,8 @@ const Intro = ({ setCurrentPage }) => {
             </p>
             <p>
               Read more{' '}
-              <mark
-                onClick={() => setCurrentPage('/about')}
-                style={{
-                  cursor: 'pointer',
-                  fontWeight: 'bold',
-                  textDecorationLine: 'underline',
-                }}
-              >
-                about me
-              </mark>{' '}
-              or{' '}
-              <mark
-                onClick={() => setCurrentPage('/contact')}
-                style={{
-                  cursor: 'pointer',
-                  fontWeight: 'bold',
-                  textDecorationLine: 'underline',
-                }}
-              >
-                contact me
-              </mark>
+              <mark onClick={() => setCurrentPage('/about')}>about me</mark> or{' '}
+              <mark onClick={() => setCurrentPage('/contact')}>contact me</mark>
             </p>
           </animated.div>
         )

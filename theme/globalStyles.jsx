@@ -26,6 +26,16 @@ export const GlobalStyles = createGlobalStyle`
 
   mark{
     background: none;
-    color: ${({ theme }) => theme.mark}
+    color: ${({ theme }) => theme.mark};
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration-line: underline;
+    font-style: italic;
+  }
+
+  .arrows{
+    color: ${({ theme }) => theme.mark};
+    font-size: 24px;
+    cursor: pointer;
   }
   `

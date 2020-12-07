@@ -28,11 +28,7 @@ const About = ({ setCurrentPage }) => {
               <FontAwesomeIcon
                 onClick={() => setCurrentPage('/')}
                 icon={faChevronRight}
-                style={{
-                  fontSize: '24px',
-                  cursor: 'pointer',
-                  color: 'rgb(255, 202, 40)',
-                }}
+                className={'arrows'}
               />
             </div>
             <h1
@@ -52,7 +48,9 @@ const About = ({ setCurrentPage }) => {
               contributor who values learning and growing with people, teams,
               and technologies.
             </p>
-            <p>Checkout my resume</p>
+            <p>
+              <mark>Checkout my resume</mark>
+            </p>
             <h1
               style={{
                 fontWeight: 'bold',

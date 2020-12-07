@@ -4,12 +4,12 @@ import Intro from '../Intro/Index'
 import About from '../About/Index'
 import Contact from '../Contact/Index'
 
-const Home = () => {
+const Home = ({ isLightMode }) => {
   const [currentPage, setCurrentPage] = useState('/')
   return (
     <HomeContainer>
       {currentPage === '/contact' ? (
-        <Contact setCurrentPage={setCurrentPage} />
+        <Contact setCurrentPage={setCurrentPage} isDarkMode={isLightMode} />
       ) : currentPage === '/about' ? (
         <About setCurrentPage={setCurrentPage} />
       ) : (
