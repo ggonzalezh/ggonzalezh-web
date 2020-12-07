@@ -1,40 +1,69 @@
 import { render } from 'react-dom'
 import React, { useState, useCallback } from 'react'
 import { useTransition, animated } from 'react-spring'
-import TestContainer from './Style'
+import AboutContainer from './Style'
+import Image from 'next/image'
+import TypeScript from '../../multimedia/typescript-icon.svg'
+import JavaScript from '../../multimedia/javascript.svg'
+import ReactSVG from '../../multimedia/react.svg'
+import Heroku from '../../multimedia/heroku-icon.svg'
+import Firebase from '../../multimedia/firebase.svg'
+import Python from '../../multimedia/python.svg'
+import NodeJS from '../../multimedia/nodejs-icon.svg'
+import MongoDb from '../../multimedia/mongodb-icon.svg'
 
 const About = ({ asd }) => {
   const transitions = useTransition(0, p => p, {
-    from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
+    from: { opacity: 0, transform: 'translate3d(0,100%,0)' },
     enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
     leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' },
   })
   return (
-    <TestContainer>
+    <AboutContainer>
       {transitions.map(({ item, props, key }) => {
         return (
           <animated.div style={props}>
-            <p>
-              "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-              velit, sed quia non numquam eius modi tempora incidunt ut labore
-              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-              veniam, quis nostrum exercitationem ullam corporis suscipit
-              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-              vel eum iure reprehenderit qui in ea voluptate velit esse quam
-              nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-              voluptas nulla pariatur?"
-            </p>
             <p onClick={() => asd(true)}>VOLVER</p>
+            <h1
+              style={{
+                fontWeight: 'bold',
+                fontSize: '34px',
+              }}
+            >
+              About
+            </h1>
+            <p>
+              A software engineer who loves to collaborate and build
+              well-structured, scalable applications. I’ve written code in
+              high-paced and challenging environment with an emphasis on using
+              best practices to develop high-quality software that meets project
+              requirements, budget, and schedule. Also, an avid open source
+              contributor who values learning and growing with people, teams,
+              and technologies.
+            </p>
+            <p>Checkout my resume</p>
+            <h1
+              style={{
+                fontWeight: 'bold',
+                fontSize: '23px',
+              }}
+            >
+              Technologies I work with
+            </h1>
+            <div>
+              <Image width={40} height={40} src={TypeScript} />
+              <Image width={40} height={40} src={JavaScript} />
+              <Image width={40} height={40} src={ReactSVG} />
+              <Image width={40} height={40} src={Heroku} />
+              <Image width={40} height={40} src={Firebase} />
+              <Image width={40} height={40} src={Python} />
+              <Image width={40} height={40} src={NodeJS} />
+              <Image width={40} height={40} src={MongoDb} />
+            </div>
           </animated.div>
         )
       })}
-    </TestContainer>
+    </AboutContainer>
   )
 }
 

@@ -10,7 +10,6 @@ export const SwitchContainer = styled.div`
     margin-top: 2.5em;
     margin-right: 2.5em;
     margin-left: 2.5em;
-    margin-bottom: 4em;
     background-color: rgb(89, 93, 222);
   }
   .ant-switch-checked {
