@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Contact from './Index'
 
 const ContactDiv = styled.div`
   display: flex;
@@ -14,5 +15,4 @@ const ContactDiv = styled.div`
     font-size: 23px;
   }
 `
-
 export default ContactDiv

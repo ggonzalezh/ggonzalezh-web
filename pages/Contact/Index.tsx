@@ -11,12 +11,12 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
 const Contact = ({ setCurrentPage }) => {
   const transitions = useTransition(0, p => p, {
-    from: { opacity: 0, transform: 'translate3d(0,100%,0)' },
+    from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
     enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
     leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' },
   })
   return (
-    <div>
+    <div style={{ marginTop: '50px' }}>
       {transitions.map(({ item, props, key }) => {
         return (
           <animated.div style={props}>

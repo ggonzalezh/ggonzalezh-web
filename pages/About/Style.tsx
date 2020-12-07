@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 const AboutContainer = styled.div`
+  margin-top: 50px;
   img {
     margin-left: 3px;
   }

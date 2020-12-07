@@ -7,9 +7,9 @@ export const SwitchContainer = styled.div`
   .ant-switch {
     width: 5.5em;
     height: 2.5em;
-    margin-top: 2.5em;
-    margin-right: 2.5em;
-    margin-left: 2.5em;
+    margin-top: 2em;
+    margin-right: 2em;
+    margin-left: 2em;
     background-color: rgb(89, 93, 222);
   }
   .ant-switch-checked {
