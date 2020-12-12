@@ -13,12 +13,7 @@ const Intro = ({ setCurrentPage }) => {
       {transitions.map(({ item, props, key }) => {
         return (
           <animated.div style={props}>
-            <h1
-              style={{
-                fontWeight: 'bold',
-                fontSize: '34px',
-              }}
-            >
+            <h1>
               Hi, I am Guillermo
               <img
                 src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif"

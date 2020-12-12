@@ -8,6 +8,7 @@ import Sun from '../multimedia/sun.svg'
 import Moon from '../multimedia/moon.svg'
 import Footer from '../components/Footer/Index'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
+import Head from 'next/head'
 import 'antd/dist/antd.css'
 
 const Index = () => {
@@ -30,7 +31,6 @@ const Index = () => {
         handleFunction={themeToggler}
       ></Toggle>
       <Home isLightMode={darkMode} isFullScreen={isFullScreen} />
-      {isFullScreen ? <Footer /> : ''}
     </ThemeProvider>
   )
 }

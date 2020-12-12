@@ -13,12 +13,12 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
 const Contact = ({ setCurrentPage, isDarkMode }) => {
   const transitions = useTransition(0, p => p, {
-    from: { opacity: 0, transform: 'translate3d(100%,0,0)' },
+    from: { opacity: 0, transform: 'translate3d(100,0,0)' },
     enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
     leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' },
   })
   return (
-    <div style={{ marginTop: '50px' }}>
+    <ContactDiv>
       {transitions.map(({ item, props, key }) => {
         return (
           <animated.div style={props}>
@@ -96,7 +96,7 @@ const Contact = ({ setCurrentPage, isDarkMode }) => {
           </animated.div>
         )
       })}
-    </div>
+    </ContactDiv>
   )
 }
 

@@ -4,12 +4,14 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-    font-family: Tahoma, Helvetica, Arial, Roboto, sans-serif;
     transition: all 0.2s linear;
+    font-size: 33px;
   }
 
-  ::-webkit-scrollbar {
-    display: none;
+  p{
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 24px;
   }
 
   a{
@@ -22,18 +24,10 @@ export const GlobalStyles = createGlobalStyle`
     text-decoration: none;
   }
 
-  .ant-layout-footer {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    background-color: ${({ theme }) => theme.footer};
-    color: ${({ theme }) => theme.text};
-    transition: all 0.2s linear;
-    margin-top: 33px;
-  }
-
   h1, h2, h3, h4, h5, h6 {
     color: ${({ theme }) => theme.text};
+    font-weight: bold;
+    font-size: 47px;
   }
 
   mark{
@@ -49,6 +43,10 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.mark};
     font-size: 24px;
     cursor: pointer;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
   }
   
   `

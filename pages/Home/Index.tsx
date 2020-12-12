@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Fullscreen, Responsive } from './Style'
+import Fullscreen from './Style'
+import Responsive from './Responsive'
 import Intro from '../Intro/Index'
 import About from '../About/Index'
 import Contact from '../Contact/Index'
