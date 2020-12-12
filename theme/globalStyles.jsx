@@ -6,12 +6,24 @@ export const GlobalStyles = createGlobalStyle`
     color: ${({ theme }) => theme.text};
     font-family: Tahoma, Helvetica, Arial, Roboto, sans-serif;
     transition: all 0.2s linear;
-    overflow-y: hidden;
-    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+
+  a: hover{
+    color: inherit;
+    text-decoration: none;
   }
 
   .ant-layout-footer {
-    position: fixed;
+    position: absolute;
     width: 100%;
     bottom: 0;
     background-color: ${({ theme }) => theme.footer};
@@ -38,4 +50,5 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 24px;
     cursor: pointer;
   }
+  
   `

@@ -49,7 +49,16 @@ const About = ({ setCurrentPage }) => {
               and technologies.
             </p>
             <p>
-              <mark>Checkout my resume</mark>
+              <mark>
+                <a
+                  href={
+                    'https://drive.google.com/file/d/1rblplm67mVrOjXRHk0j0tYbNJF76ToBW/view?usp=sharing'
+                  }
+                  target={'_blank'}
+                >
+                  Checkout my resume
+                </a>
+              </mark>
             </p>
             <h1
               style={{

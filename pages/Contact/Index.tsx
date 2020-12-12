@@ -46,7 +46,11 @@ const Contact = ({ setCurrentPage, isDarkMode }) => {
                 <Image width={30} height={30} src={Email} />
               )}
               <span>
-                <mark>hello@ggonzalezh.dev</mark>
+                <mark>
+                  <a href={'mailto:hello@ggonzalezh.dev'}>
+                    hello@ggonzalezh.dev
+                  </a>
+                </mark>
               </span>
             </ContactDiv>
             <ContactDiv>
@@ -56,19 +60,37 @@ const Contact = ({ setCurrentPage, isDarkMode }) => {
                 <Image width={30} height={30} src={Github} />
               )}
               <span>
-                <mark>ggonzalezh</mark>
+                <mark>
+                  <a href={'https://github.com/ggonzalezh'} target={'_blank'}>
+                    ggonzalezh
+                  </a>
+                </mark>
               </span>
             </ContactDiv>
             <ContactDiv>
               <Image width={30} height={30} src={Twitter} />
               <span>
-                <mark>ggonzalezh_cl</mark>
+                <mark>
+                  <a
+                    href={'https://twitter.com/ggonzalezh_cl'}
+                    target={'_blank'}
+                  >
+                    ggonzalezh_cl
+                  </a>
+                </mark>
               </span>
             </ContactDiv>
             <ContactDiv>
               <Image width={30} height={30} src={Linkedin} />
               <span>
-                <mark>ggonzalezhidalgo</mark>
+                <mark>
+                  <a
+                    href={'https://www.linkedin.com/in/ggonzalezhidalgo'}
+                    target={'_blank'}
+                  >
+                    ggonzalezhidalgo
+                  </a>
+                </mark>
               </span>
             </ContactDiv>
           </animated.div>

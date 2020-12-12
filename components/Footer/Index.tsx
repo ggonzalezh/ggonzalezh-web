@@ -9,7 +9,6 @@ const Footer = () => {
       <Layout>
         <Footer>
           <div style={{ textAlign: 'center' }}>
-            {' '}
             © {year} Guillermo González | All rights reserved
           </div>
         </Footer>
