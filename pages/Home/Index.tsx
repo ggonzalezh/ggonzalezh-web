@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
-import HomeContainer from './Style'
+import { Fullscreen, Responsive } from './Style'
 import Intro from '../Intro/Index'
 import About from '../About/Index'
 import Contact from '../Contact/Index'
 
-const Home = ({ isLightMode }) => {
+const Home = ({ isLightMode, isFullScreen }) => {
   const [currentPage, setCurrentPage] = useState('/')
+  const Container = isFullScreen ? Fullscreen : Responsive
+
   return (
-    <HomeContainer>
+    <Container>
       {currentPage === '/contact' ? (
         <Contact setCurrentPage={setCurrentPage} isDarkMode={isLightMode} />
       ) : currentPage === '/about' ? (
@@ -15,7 +17,7 @@ const Home = ({ isLightMode }) => {
       ) : (
         <Intro setCurrentPage={setCurrentPage} />
       )}
-    </HomeContainer>
+    </Container>
   )
 }
 

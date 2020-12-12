@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 import { Toggle } from '../components/Toggle/Index'
 import { GlobalStyles } from '../theme/globalStyles'
@@ -7,10 +7,12 @@ import Home from './Home/Index'
 import Sun from '../multimedia/sun.svg'
 import Moon from '../multimedia/moon.svg'
 import Footer from '../components/Footer/Index'
+import useMediaQuery from '@material-ui/core/useMediaQuery'
 import 'antd/dist/antd.css'
 
 const Index = () => {
   const [darkMode, setDarkMode] = useState(false)
+  const isFullScreen = useMediaQuery('(min-width: 775px)')
 
   const themeToggler = () => {
     darkMode === true ? setDarkMode(false) : setDarkMode(true)
@@ -27,8 +29,8 @@ const Index = () => {
         }
         handleFunction={themeToggler}
       ></Toggle>
-      <Home isLightMode={darkMode} />
-      <Footer></Footer>
+      <Home isLightMode={darkMode} isFullScreen={isFullScreen} />
+      {isFullScreen ? <Footer /> : ''}
     </ThemeProvider>
   )
 }
