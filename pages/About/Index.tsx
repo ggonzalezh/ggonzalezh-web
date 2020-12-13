@@ -33,7 +33,7 @@ const About = ({ setCurrentPage }) => {
                 />
               </div>
               <h1>About</h1>
-              <p className={'about'}>
+              <p className={'textAbout'}>
                 A software engineer who loves to collaborate and build
                 well-structured, scalable applications. I’ve written code in
                 high-paced and challenging environment with an emphasis on using
@@ -45,7 +45,9 @@ const About = ({ setCurrentPage }) => {
               <p>
                 <mark>
                   <a
-                    href={'https://github.com/ggonzalezh/CV/tree/english'}
+                    href={
+                      'https://github.com/ggonzalezh/CV/tree/english#guillermo-gonzález'
+                    }
                     target={'_blank'}
                   >
                     Checkout my resume

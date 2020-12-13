@@ -57,35 +57,42 @@ export const GlobalStyles = createGlobalStyle`
 }
 
 .intro{
-  @media (max-width: 1360px) {
-    margin-top: 10%;
+  @media (max-height: 768px) {
+    margin-top: 15% !important;
   }
 
-  @media (max-width: 1920px) {
-    margin-top: 15%;
-  }
-
-  .contact{
-    @media (max-width: 1360px) {
-      margin-top: 2%;
-    }
-  
-    @media (max-width: 1920px) {
-      margin-top: 10%;
-    }
-  }
-
-  .about{
-    @media (max-width: 1360px) {
-      margin-top: 2%;
-      font-size: 18px;
-    }
-  
-    @media (max-width: 1920px) {
-      margin-top: 10%;
-      font-size: 23px;
-    }
+  @media (max-height: 1080px) {
+    margin-top: 18%;
   }
 }
+
+.contact{
+  @media (max-height: 768px) {
+    margin-top: 5% !important;
+  }
   
-  `
+  @media (max-height: 1080px) {
+      margin-top: 10%;
+  }
+}
+
+.about{
+  @media (max-height: 768px) {
+    margin-top: 4% !important;
+  }
+  
+  @media (max-height: 1080px) {
+    margin-top: 10%;
+  }
+} 
+
+.textAbout{
+  @media (max-height: 768px) {
+    font-size: 18px !important;
+  }
+  
+  @media (max-height: 1080px) {
+    font-size: 23px;
+  }
+}  
+`
