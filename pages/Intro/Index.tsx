@@ -1,5 +1,4 @@
 import React from 'react'
-import IntroContainer from './Style'
 import { useTransition, animated } from 'react-spring'
 
 const Intro = ({ setCurrentPage }) => {
@@ -9,7 +8,7 @@ const Intro = ({ setCurrentPage }) => {
     leave: { opacity: 0 },
   })
   return (
-    <IntroContainer>
+    <div>
       {transitions.map(({ item, props, key }) => {
         return (
           <animated.div style={props}>
@@ -33,7 +32,7 @@ const Intro = ({ setCurrentPage }) => {
           </animated.div>
         )
       })}
-    </IntroContainer>
+    </div>
   )
 }
 
