@@ -8,7 +8,7 @@ const Intro = ({ setCurrentPage }) => {
     leave: { opacity: 0 },
   })
   return (
-    <div>
+    <div style={{ marginTop: '15%' }}>
       {transitions.map(({ item, props, key }) => {
         return (
           <animated.div style={props}>

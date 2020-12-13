@@ -18,7 +18,7 @@ const Contact = ({ setCurrentPage, isDarkMode }) => {
     leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' },
   })
   return (
-    <ContactDiv>
+    <div style={{ marginTop: '10%' }}>
       {transitions.map(({ item, props, key }) => {
         return (
           <animated.div style={props}>
@@ -96,7 +96,7 @@ const Contact = ({ setCurrentPage, isDarkMode }) => {
           </animated.div>
         )
       })}
-    </ContactDiv>
+    </div>
   )
 }
 
