@@ -13,17 +13,15 @@ import MongoDb from '../../multimedia/mongodb-icon.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
-const About = ({ setCurrentPage, screen }) => {
+const About = ({ setCurrentPage }) => {
   const transitions = useTransition(0, p => p, {
     from: { opacity: 0, transform: 'translate3d(100,0,0)' },
     enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
     leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' },
   })
-  const margen = screen ? '10%' : '2%'
-  const font = screen ? '23px' : '18px'
   return (
     <AboutContainer>
-      <div style={{ marginTop: margen }}>
+      <div className={'about'}>
         {transitions.map(({ item, props, key }) => {
           return (
             <animated.div style={props}>
@@ -35,7 +33,7 @@ const About = ({ setCurrentPage, screen }) => {
                 />
               </div>
               <h1>About</h1>
-              <p style={{ fontSize: font }}>
+              <p className={'about'}>
                 A software engineer who loves to collaborate and build
                 well-structured, scalable applications. I’ve written code in
                 high-paced and challenging environment with an emphasis on using

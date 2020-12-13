@@ -2,15 +2,14 @@ import React from 'react'
 import Image from 'next/image'
 import { useTransition, animated } from 'react-spring'
 
-const Intro = ({ setCurrentPage, screen }) => {
+const Intro = ({ setCurrentPage }) => {
   const transitions = useTransition(0, p => p, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
   })
-  const margen = screen ? '15%' : '10%'
   return (
-    <div style={{ marginTop: margen }}>
+    <div className={'intro'}>
       {transitions.map(({ item, props, key }) => {
         return (
           <animated.div style={props}>
