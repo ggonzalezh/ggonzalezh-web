@@ -22,8 +22,8 @@ const Intro = ({ setCurrentPage }) => {
               ></img>
             </h1>
             <p>
-              A full stack developer who loves open source and values learning
-              and growing with people, teams, and technologies.
+              A full stack developer from Chile, who loves open source and
+              values learning and growing with people, teams, and technologies.
             </p>
             <p>
               Read more{' '}

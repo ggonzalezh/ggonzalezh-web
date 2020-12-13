@@ -43,12 +43,7 @@ const About = ({ setCurrentPage }) => {
             </p>
             <p>
               <mark>
-                <a
-                  href={
-                    'https://drive.google.com/file/d/1rblplm67mVrOjXRHk0j0tYbNJF76ToBW/view?usp=sharing'
-                  }
-                  target={'_blank'}
-                >
+                <a href={process.env.CV} target={'_blank'}>
                   Checkout my resume
                 </a>
               </mark>
@@ -56,7 +51,7 @@ const About = ({ setCurrentPage }) => {
             <h1
               style={{
                 fontWeight: 'bold',
-                fontSize: '23px',
+                fontSize: '33px',
               }}
             >
               Technologies I work with
