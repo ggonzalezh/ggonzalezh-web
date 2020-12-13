@@ -13,65 +13,69 @@ import MongoDb from '../../multimedia/mongodb-icon.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
-const About = ({ setCurrentPage }) => {
+const About = ({ setCurrentPage, screen }) => {
   const transitions = useTransition(0, p => p, {
     from: { opacity: 0, transform: 'translate3d(100,0,0)' },
     enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
     leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' },
   })
+  const margen = screen ? '10%' : '2%'
+  const font = screen ? '23px' : '18px'
   return (
     <AboutContainer>
-      {transitions.map(({ item, props, key }) => {
-        return (
-          <animated.div style={props}>
-            <div style={{ textAlignLast: 'end' }}>
-              <FontAwesomeIcon
-                onClick={() => setCurrentPage('/')}
-                icon={faChevronRight}
-                className={'arrows'}
-              />
-            </div>
-            <h1>About</h1>
-            <p>
-              A software engineer who loves to collaborate and build
-              well-structured, scalable applications. I’ve written code in
-              high-paced and challenging environment with an emphasis on using
-              best practices to develop high-quality software that meets project
-              requirements, budget, and schedule. Also, an avid open source
-              contributor who values learning and growing with people, teams,
-              and technologies.
-            </p>
-            <p>
-              <mark>
-                <a
-                  href={'https://github.com/ggonzalezh/CV/tree/english'}
-                  target={'_blank'}
-                >
-                  Checkout my resume
-                </a>
-              </mark>
-            </p>
-            <h1
-              style={{
-                fontWeight: 'bold',
-                fontSize: '33px',
-              }}
-            >
-              Technologies I work with
-            </h1>
-            <div>
-              <Image width={40} height={40} src={TypeScript} />
-              <Image width={40} height={40} src={JavaScript} />
-              <Image width={40} height={40} src={ReactSVG} />
-              <Image width={40} height={40} src={Heroku} />
-              <Image width={40} height={40} src={Firebase} />
-              <Image width={40} height={40} src={Python} />
-              <Image width={40} height={40} src={NodeJS} />
-              <Image width={40} height={40} src={MongoDb} />
-            </div>
-          </animated.div>
-        )
-      })}
+      <div style={{ marginTop: margen }}>
+        {transitions.map(({ item, props, key }) => {
+          return (
+            <animated.div style={props}>
+              <div style={{ textAlignLast: 'end' }}>
+                <FontAwesomeIcon
+                  onClick={() => setCurrentPage('/')}
+                  icon={faChevronRight}
+                  className={'arrows'}
+                />
+              </div>
+              <h1>About</h1>
+              <p style={{ fontSize: font }}>
+                A software engineer who loves to collaborate and build
+                well-structured, scalable applications. I’ve written code in
+                high-paced and challenging environment with an emphasis on using
+                best practices to develop high-quality software that meets
+                project requirements, budget, and schedule. Also, an avid open
+                source contributor who values learning and growing with people,
+                teams, and technologies.
+              </p>
+              <p>
+                <mark>
+                  <a
+                    href={'https://github.com/ggonzalezh/CV/tree/english'}
+                    target={'_blank'}
+                  >
+                    Checkout my resume
+                  </a>
+                </mark>
+              </p>
+              <h1
+                style={{
+                  fontWeight: 'bold',
+                  fontSize: '33px',
+                }}
+              >
+                Technologies I work with
+              </h1>
+              <div>
+                <Image width={40} height={40} src={TypeScript} />
+                <Image width={40} height={40} src={JavaScript} />
+                <Image width={40} height={40} src={ReactSVG} />
+                <Image width={40} height={40} src={Heroku} />
+                <Image width={40} height={40} src={Firebase} />
+                <Image width={40} height={40} src={Python} />
+                <Image width={40} height={40} src={NodeJS} />
+                <Image width={40} height={40} src={MongoDb} />
+              </div>
+            </animated.div>
+          )
+        })}
+      </div>
     </AboutContainer>
   )
 }
