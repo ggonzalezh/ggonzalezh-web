@@ -21,6 +21,9 @@ const Index = () => {
   return (
     <ThemeProvider theme={darkMode === true ? lightTheme : darkTheme}>
       <GlobalStyles />
+      <Head>
+        <title>Guillermo González</title>
+      </Head>
       <Toggle
         checkedValue={
           <img style={{ width: '2.5em', float: 'left' }} src={Sun}></img>
