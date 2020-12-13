@@ -43,7 +43,10 @@ const About = ({ setCurrentPage }) => {
             </p>
             <p>
               <mark>
-                <a href={process.env.CV} target={'_blank'}>
+                <a
+                  href={'https://github.com/ggonzalezh/CV/tree/english'}
+                  target={'_blank'}
+                >
                   Checkout my resume
                 </a>
               </mark>
