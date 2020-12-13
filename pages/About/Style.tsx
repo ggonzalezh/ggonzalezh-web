@@ -6,7 +6,7 @@ const AboutContainer = styled.div`
     margin-left: 3px;
   }
   p {
-    font-size: 16px;
+    font-size: 23px;
   }
 `
 

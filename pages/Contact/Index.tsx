@@ -27,15 +27,8 @@ const Contact = ({ setCurrentPage, isDarkMode }) => {
               icon={faChevronLeft}
               className={'arrows'}
             />
-            <h1
-              style={{
-                fontWeight: 'bold',
-                fontSize: '34px',
-              }}
-            >
-              Contact
-            </h1>
-            <p style={{ fontSize: '18px', marginBottom: '40px' }}>
+            <h1>Contact</h1>
+            <p style={{ fontSize: '23px', marginBottom: '40px' }}>
               Do you have a project in mind? Want to hire me? Or simply wanna
               chat? Feel free to reach out
             </p>

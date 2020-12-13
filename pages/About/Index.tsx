@@ -31,14 +31,7 @@ const About = ({ setCurrentPage }) => {
                 className={'arrows'}
               />
             </div>
-            <h1
-              style={{
-                fontWeight: 'bold',
-                fontSize: '34px',
-              }}
-            >
-              About
-            </h1>
+            <h1>About</h1>
             <p>
               A software engineer who loves to collaborate and build
               well-structured, scalable applications. I’ve written code in

@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { useTransition, animated } from 'react-spring'
 
 const Intro = ({ setCurrentPage }) => {

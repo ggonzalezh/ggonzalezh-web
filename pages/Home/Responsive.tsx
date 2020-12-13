@@ -4,5 +4,6 @@ const Responsive = styled.div`
   margin-right: 10%;
   margin-left: 10%;
   margin-top: 15%;
+  padding-bottom: 150px;
 `
 export default Responsive
