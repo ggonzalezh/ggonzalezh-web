@@ -11,14 +11,15 @@ import { useTransition, animated } from 'react-spring'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
-const Contact = ({ setCurrentPage, isDarkMode }) => {
+const Contact = ({ setCurrentPage, isDarkMode, screen }) => {
   const transitions = useTransition(0, p => p, {
     from: { opacity: 0, transform: 'translate3d(100,0,0)' },
     enter: { opacity: 1, transform: 'translate3d(0%,0,0)' },
     leave: { opacity: 0, transform: 'translate3d(-50%,0,0)' },
   })
+  const margen = screen ? '10%' : '2%'
   return (
-    <div style={{ marginTop: '10%' }}>
+    <div style={{ marginTop: margen }}>
       {transitions.map(({ item, props, key }) => {
         return (
           <animated.div style={props}>

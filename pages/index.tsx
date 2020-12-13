@@ -9,11 +9,13 @@ import Moon from '../multimedia/moon.svg'
 import Footer from '../components/Footer/Index'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
 import Head from 'next/head'
+import Particles from '../components/Particles/Index'
 import 'antd/dist/antd.css'
 
 const Index = () => {
   const [darkMode, setDarkMode] = useState(false)
   const isFullScreen = useMediaQuery('(min-width: 775px)')
+  const screen = useMediaQuery('(min-height: 1360px)')
 
   const themeToggler = () => {
     darkMode === true ? setDarkMode(false) : setDarkMode(true)
@@ -21,6 +23,10 @@ const Index = () => {
   return (
     <ThemeProvider theme={darkMode === true ? lightTheme : darkTheme}>
       <GlobalStyles />
+      <Head>
+        <title>Guillermo González</title>
+      </Head>
+      <Particles />
       <Toggle
         checkedValue={
           <img style={{ width: '2.5em', float: 'left' }} src={Sun}></img>
@@ -30,7 +36,11 @@ const Index = () => {
         }
         handleFunction={themeToggler}
       ></Toggle>
-      <Home isLightMode={darkMode} isFullScreen={isFullScreen} />
+      <Home
+        isLightMode={darkMode}
+        isFullScreen={isFullScreen}
+        screen={screen}
+      />
     </ThemeProvider>
   )
 }

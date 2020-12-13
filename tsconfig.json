@@ -20,7 +20,8 @@
     "**/*.tsx",
     "next.config.js",
     "theme/Themes.jsx",
-    "theme/globalStyles.jsx"
+    "theme/globalStyles.jsx",
+    "components/Particles/Index.tsx"
   ],
   "exclude": ["node_modules"]
 }

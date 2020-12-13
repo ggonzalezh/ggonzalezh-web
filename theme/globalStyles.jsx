@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
   p{
     margin-top: 10px;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 23px;
   }
 
   a{
@@ -48,5 +48,12 @@ export const GlobalStyles = createGlobalStyle`
   ::-webkit-scrollbar {
     display: none;
   }
+
+  .tsparticles-canvas-el {
+    position : absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
   
   `
