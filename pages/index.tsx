@@ -14,9 +14,7 @@ import 'antd/dist/antd.css'
 
 const Index = () => {
   const [darkMode, setDarkMode] = useState(false)
-  const isFullScreen = useMediaQuery('(min-width: 775px)')
-  const screen = useMediaQuery('(min-height: 1360px)')
-
+  const isFullScreen = useMediaQuery('(min-width:775px)')
   const themeToggler = () => {
     darkMode === true ? setDarkMode(false) : setDarkMode(true)
   }
@@ -36,11 +34,7 @@ const Index = () => {
         }
         handleFunction={themeToggler}
       ></Toggle>
-      <Home
-        isLightMode={darkMode}
-        isFullScreen={isFullScreen}
-        screen={screen}
-      />
+      <Home isLightMode={darkMode} isFullScreen={isFullScreen} />
     </ThemeProvider>
   )
 }

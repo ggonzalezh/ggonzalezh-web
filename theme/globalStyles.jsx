@@ -55,5 +55,37 @@ export const GlobalStyles = createGlobalStyle`
     height:100%;
     z-index:-1;
 }
+
+.intro{
+  @media (max-width: 1360px) {
+    margin-top: 10%;
+  }
+
+  @media (max-width: 1920px) {
+    margin-top: 15%;
+  }
+
+  .contact{
+    @media (max-width: 1360px) {
+      margin-top: 2%;
+    }
+  
+    @media (max-width: 1920px) {
+      margin-top: 10%;
+    }
+  }
+
+  .about{
+    @media (max-width: 1360px) {
+      margin-top: 2%;
+      font-size: 18px;
+    }
+  
+    @media (max-width: 1920px) {
+      margin-top: 10%;
+      font-size: 23px;
+    }
+  }
+}
   
   `
