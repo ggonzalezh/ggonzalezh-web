@@ -24,7 +24,7 @@ const Index = () => {
       <Head>
         <title>Guillermo González</title>
       </Head>
-      <Particles />
+      {!darkMode && <Particles />}
       <Toggle
         checkedValue={
           <img style={{ width: '2.5em', float: 'left' }} src={Sun}></img>
