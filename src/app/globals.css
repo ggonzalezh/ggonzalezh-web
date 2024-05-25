@@ -16,12 +16,6 @@ html {
 }
 
 
-h1 {
-  font-family: 'JetBrains Mono ExtraBold', monospace;
-  font-size: 2.25rem;
-  text-transform: uppercase;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
